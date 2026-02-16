@@ -2,12 +2,13 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./pages/auth/Login";
 import HomeLayout from "./layouts/HomeLayout";
 import ProfileLayout from "./layouts/ProfileLayout";
+import Landing from "./pages/system/Landing";
 
 const App = () => {
   return (
     <Routes>
 
-      {/* <Route path="/landing" element={<Landing />} /> */}
+      <Route path="/landing" element={<Landing />} />
 
       <Route path="/login" element={<Login />} />
 
