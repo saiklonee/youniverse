@@ -1,6 +1,24 @@
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/auth/Login";
+import HomeLayout from "./layouts/HomeLayout";
+import ProfileLayout from "./layouts/ProfileLayout";
+
 const App = () => {
   return (
-    <div>App</div>
+    <Routes>
+
+      {/* <Route path="/landing" element={<Landing />} /> */}
+
+      <Route path="/login" element={<Login />} />
+
+      <Route path="/" element={<HomeLayout />}>
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+      </Route>
+
+      <Route path="/profile" element={<ProfileLayout />}>
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+      </Route>
+    </Routes>
   )
 }
 
