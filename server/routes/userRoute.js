@@ -32,7 +32,7 @@ userRouter.patch("/me", authUser, avatarUpload, updateMe);
 userRouter.patch("/me/password", authUser, changeMyPassword);
 
 // Admin routes
-userRouter.get("/", authUser, requireAdmin, getAllUsers);
+// userRouter.get("/", authUser, requireAdmin, getAllUsers);
 userRouter.get("/:id", authUser, requireAdmin, getUserById);
 userRouter.patch("/:id/block", authUser, requireAdmin, blockUser);
 userRouter.patch("/:id", authUser, requireAdmin, avatarUpload, adminUpdateUser);
