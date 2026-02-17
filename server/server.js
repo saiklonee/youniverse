@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
 
-// import userRouter from "./routes/userRoute.js";
+import userRouter from "./routes/userRoute.js";
 // import collegeRouter from "./routes/collegeRoute.js";
 // import itemRouter from "./routes/itemRoute.js";
 // import wishlistRouter from "./routes/wishlistRoute.js";
@@ -90,7 +90,7 @@ app.get("/", (req, res) => {
 // app.use("/api/user/login", authLimiter);
 // app.use("/api/user/register", authLimiter);
 
-// app.use("/api/user", userRouter);
+app.use("/api/user", userRouter);
 // app.use("/api/college", collegeRouter);
 // app.use("/api/item", itemRouter);
 // app.use("/api/wishlist", wishlistRouter);
